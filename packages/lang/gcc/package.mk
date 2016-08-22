@@ -17,7 +17,7 @@
 ################################################################################
 
 PKG_NAME="gcc"
-PKG_VERSION="5.4.0"
+PKG_VERSION="6.2.0"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
@@ -70,7 +70,8 @@ BOOTSTRAP_CONFIGURE_OPTS="--host=$HOST_NAME \
                           $GCC_OPTS \
                           --disable-nls \
                           --enable-checking=release \
-                          --with-default-libstdcxx-abi=gcc4-compatible"
+                          --with-default-libstdcxx-abi=gcc4-compatible \
+                          --disable-libmpx"
 
 PKG_CONFIGURE_OPTS_HOST="--target=$TARGET_NAME \
                          --with-sysroot=$SYSROOT_PREFIX \
@@ -108,7 +109,8 @@ PKG_CONFIGURE_OPTS_HOST="--target=$TARGET_NAME \
                          $GCC_OPTS \
                          --disable-nls \
                          --enable-checking=release \
-                         --with-default-libstdcxx-abi=gcc4-compatible"
+                         --with-default-libstdcxx-abi=gcc4-compatible \
+                         --disable-libmpx"
 
 pre_configure_host() {
   export CXXFLAGS="$CXXFLAGS -std=gnu++98"
