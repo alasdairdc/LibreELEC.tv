@@ -17,7 +17,7 @@
 ################################################################################
 
 PKG_NAME="btrfs-progs"
-PKG_VERSION="v4.7.3"
+PKG_VERSION="v4.8.1"
 PKG_REV="1"
 PKG_ARCH="any"
 PKG_LICENSE="GPL"
@@ -25,7 +25,6 @@ PKG_SITE="https://github.com/kdave/btrfs-progs"
 PKG_URL="https://www.kernel.org/pub/linux/kernel/people/kdave/btrfs-progs/btrfs-progs-$PKG_VERSION.tar.gz"
 PKG_DEPENDS_TARGET="toolchain e2fsprogs util-linux zlib lzo"
 PKG_DEPENDS_INIT="btrfs-progs"
-PKG_PRIORITY="optional"
 PKG_SECTION="tools"
 PKG_SHORTDESC="f2fs-tools: Utilities for use with the f2fs filesystem"
 PKG_LONGDESC="The filesystem utilities for the f2fs filesystem"
